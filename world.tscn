@@ -1,0 +1,36 @@
+[gd_scene load_steps=12 format=3 uid="uid://bv0g1df6smgag"]
+
+[ext_resource type="Texture2D" uid="uid://hyhj7drg72i6" path="res://kenney_top-down-tanks/PNG/Environment/dirt.png" id="1_re5lh"]
+[ext_resource type="Texture2D" uid="uid://bmvshaklkf8bp" path="res://kenney_top-down-tanks/PNG/Environment/grass.png" id="2_gmumv"]
+[ext_resource type="Texture2D" uid="uid://dkxwryrujtmma" path="res://kenney_top-down-tanks/PNG/Environment/sand.png" id="3_y2qin"]
+[ext_resource type="Texture2D" uid="uid://dqop4jh5dx2dt" path="res://kenney_top-down-tanks/PNG/Environment/treeLarge.png" id="4_3ry34"]
+[ext_resource type="Texture2D" uid="uid://cmwhv1qbutpv5" path="res://kenney_top-down-tanks/PNG/Environment/treeSmall.png" id="5_71ukv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t5pht"]
+texture = ExtResource("1_re5lh")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_30pr8"]
+texture = ExtResource("2_gmumv")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ld02u"]
+texture = ExtResource("3_y2qin")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_llmmc"]
+texture = ExtResource("4_3ry34")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_itwpl"]
+texture = ExtResource("5_71ukv")
+
+[sub_resource type="TileSet" id="TileSet_ose7g"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_t5pht")
+sources/1 = SubResource("TileSetAtlasSource_30pr8")
+sources/2 = SubResource("TileSetAtlasSource_ld02u")
+sources/3 = SubResource("TileSetAtlasSource_llmmc")
+sources/4 = SubResource("TileSetAtlasSource_itwpl")
+
+[node name="world" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ose7g")
+format = 2
