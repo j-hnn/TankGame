@@ -1,4 +1,8 @@
 CollisionShape2D
 Area2D
+Sprite2D
+Camera2D
+Marker2D
+CharacterBody2D
 CollisionPolygon2D
 TileMap

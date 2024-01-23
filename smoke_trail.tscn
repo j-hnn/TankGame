@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdlh684ns4vwo"]
+
+[ext_resource type="Texture2D" uid="uid://ckdly25y64o58" path="res://kenney_top-down-tanks/PNG/Smoke/smokeGrey0.png" id="1_rubf4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m7ku5"]
+
+[node name="smoke_trail" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rubf4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_m7ku5")
