@@ -22,38 +22,47 @@ size = Vector2(22, 58)
 script = ExtResource("1_hwnyw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 4.71239
 texture = ExtResource("1_0gk47")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+rotation = 4.70792
 texture = ExtResource("2_r3ykq")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(0, 54)
+position = Vector2(54, 1.19209e-07)
+rotation = 4.70792
 texture = ExtResource("3_qxbov")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(0, 54)
+position = Vector2(55, -7.62939e-06)
+rotation = 4.70792
 texture = ExtResource("4_j4w8c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0)
+rotation = 4.70792
 shape = SubResource("RectangleShape2D_ahnjm")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(0, 54)
+position = Vector2(53, 0.999992)
+rotation = 4.70792
 shape = SubResource("RectangleShape2D_vg1yy")
 
 [node name="hitbox" type="Area2D" parent="."]
+rotation = 4.70792
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
 shape = SubResource("RectangleShape2D_msgmb")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="hitbox"]
-position = Vector2(0, 54)
+position = Vector2(-0.241322, 53.9995)
 shape = SubResource("RectangleShape2D_2ngxl")
 
 [node name="muzzle" type="Marker2D" parent="."]
-position = Vector2(0, 83)
+position = Vector2(83, -1.52588e-05)
+rotation = 4.70792
 
 [node name="trail" type="Marker2D" parent="."]
-position = Vector2(0, -39)
+position = Vector2(-40, 1)
+rotation = 4.70792
