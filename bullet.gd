@@ -1,8 +1,13 @@
 extends Area2D
 
-var velocity = Vector2(500, 0)
+var velocity = 50
+var direction = Vector2.ZERO
 
 func _physics_process(delta):
-	self.position += velocity * delta
-	await get_tree().create_timer(5).timeout
+	self.global_position += velocity
+	
+	await get_tree().create_timer(2.5).timeout
+	queue_free()
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

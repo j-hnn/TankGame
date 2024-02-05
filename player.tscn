@@ -66,3 +66,5 @@ rotation = 4.70792
 [node name="trail" type="Marker2D" parent="."]
 position = Vector2(-40, 1)
 rotation = 4.70792
+
+[node name="bullet_scene" type="Node2D" parent="."]

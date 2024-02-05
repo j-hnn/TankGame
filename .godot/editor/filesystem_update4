@@ -1,7 +1,7 @@
 res://world.tscn
-res://player.gd
 res://player.tscn
 res://bullet.tscn
 res://smoke_trail.tscn
-res://bullet.gd
+res://player.gd
 res://smoke_trail.gd
+res://bullet.gd
