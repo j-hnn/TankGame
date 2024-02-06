@@ -1,13 +1,10 @@
-extends Area2D
+extends CharacterBody2D
 
-var velocity = 50
-var direction = Vector2.ZERO
+var speed = 500
 
 func _physics_process(delta):
-	self.global_position += velocity
-	
-	await get_tree().create_timer(2.5).timeout
-	queue_free()
+	velocity = transform.x * speed
+	move_and_slide()
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()

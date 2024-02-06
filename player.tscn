@@ -60,11 +60,9 @@ position = Vector2(-0.241322, 53.9995)
 shape = SubResource("RectangleShape2D_2ngxl")
 
 [node name="muzzle" type="Marker2D" parent="."]
-position = Vector2(83, -1.52588e-05)
+position = Vector2(98, 1.45519e-11)
 rotation = 4.70792
 
 [node name="trail" type="Marker2D" parent="."]
 position = Vector2(-40, 1)
 rotation = 4.70792
-
-[node name="bullet_scene" type="Node2D" parent="."]
