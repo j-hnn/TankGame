@@ -1,6 +1,7 @@
+res://barrack.tscn
+res://barrack.gd
+res://bullet.tscn
 res://world.tscn
 res://player.tscn
-res://bullet.tscn
 res://smoke_trail.tscn
 res://bullet.gd
-res://player.gd
